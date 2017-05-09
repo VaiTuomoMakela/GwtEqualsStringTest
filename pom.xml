@@ -81,6 +81,7 @@
         <!-- Plugin configuration. There are many available options, see 
           gwt-maven-plugin documentation at codehaus.org -->
         <configuration>
+          <productionMode>true</productionMode>
           <runTarget>equalsstring.html</runTarget>
           <modules>
             <module>equals.string.equalsstring</module>

@@ -75,9 +75,9 @@ public class GwtTestEqualsString extends GWTTestCase {
     }
 
 
-//    public void testStringEquality() {
-//        TestWidget testWidget = new TestWidget();
-//        testWidget.update();
-// }
+    public void testNullStrings() {
+        EmptyClass testClass = new EmptyClass();
+        assertEquals("result", testClass.toString());
+    }
 
 }
