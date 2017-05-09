@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="EqualsString">
+  <!-- Inherit our applications main module.                      -->
+  <inherits name='equals.string.EqualsString' />
+
+  <!-- Specify the path to any remote services.                   -->
+  <servlet path="/equalsstring/greet" class="equals.string.server.GreetingServiceImpl" />
+
+</module>
