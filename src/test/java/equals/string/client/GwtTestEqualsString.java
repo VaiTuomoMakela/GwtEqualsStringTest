@@ -6,6 +6,9 @@ import com.google.gwt.junit.client.GWTTestCase;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.rpc.ServiceDefTarget;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * GWT JUnit <b>integration</b> tests must extend GWTTestCase.
  * Using <code>"GwtTest*"</code> naming pattern exclude them from running with
@@ -17,6 +20,7 @@ import com.google.gwt.user.client.rpc.ServiceDefTarget;
  * for details.
  */
 public class GwtTestEqualsString extends GWTTestCase {
+    Logger logger = Logger.getLogger(this.getClass().toString());
 
     /**
      * Must refer to a valid module that sources this class.
@@ -40,6 +44,7 @@ public class GwtTestEqualsString extends GWTTestCase {
         assertFalse(FieldVerifier.isEqual("aaa", "bbb"));
     }
 
+    
     /**
      * This test will send a request to the server using the greetServer method in
      * GreetingService and verify the response.
@@ -77,7 +82,7 @@ public class GwtTestEqualsString extends GWTTestCase {
 
     public void testNullStrings() {
         EmptyClass testClass = new EmptyClass();
-        assertEquals("result", testClass.toString());
+        logger.log(Level.INFO, "undefined vs. null: "+ testClass.toString());
     }
 
 }

@@ -2,6 +2,7 @@
 <module rename-to="EqualsString">
   <!-- Inherit our applications main module.                      -->
   <inherits name='equals.string.EqualsString' />
+  <inherits name="com.google.gwt.logging.Logging"/>
 
   <!-- Specify the path to any remote services.                   -->
   <servlet path="/equalsstring/greet" class="equals.string.server.GreetingServiceImpl" />
